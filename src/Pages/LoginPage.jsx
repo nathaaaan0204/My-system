@@ -76,7 +76,8 @@ export const LoginPage = () => {
       <div className="bg-[url('/images/sign-in-bg.jpg')] h-screen bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center">
         <Card className="rounded shadow-md w-[1000px] flex flex-row divide-x-2">
           <div className="flex flex-col text-center justify-center w-full p-12 gap-5">
-            <Typography variant="h1">WELCOME</Typography>
+            <div className="w-full flex justify-center"><img src="/images/logo.png" className="w-[200px] h-[50px]"/>
+              </div>
             <Typography className="text-2xl font-semibold">Sign in</Typography>
             <Typography className="">To access Website Name</Typography>
             <form onSubmit={handleSubmit} className="flex flex-col gap-2">
