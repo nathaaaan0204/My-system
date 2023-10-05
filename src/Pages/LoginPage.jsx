@@ -102,21 +102,21 @@ export const LoginPage = () => {
                 />
 
                 {error && <p className="text-red-500 mb-2">{error}</p>}
-                <div className="flex items-center justify-between">
+                
                   <Button type="submit" fullWidth className="bg-green">
                     Sign In
                   </Button>
-                </div>
+                
               </form>
               <Typography className="text-left">
-                By clicking the “Sign up” button, you are creating a Lead Gen
-                Crew account and therefore you agree to Lead Gen Crew Company’s{" "}
-                <strong>Terms of service</strong> and{" "}
+                By clicking the “Sign in” button, you are entering the Website Name
+                 and therefore you agree to Company’s
+                <strong>Terms of service</strong> and
                 <strong>Privacy Policy.</strong>
               </Typography>
               <Typography>
-                Don't have an account?{" "}
-                <Link to="RegisterPage" className="text-green font-medium">
+                Don't have an account? 
+                <Link to="/RegisterPage" className="text-green font-medium ml-1">
                   Sign Up
                 </Link>
               </Typography>

@@ -9,3 +9,23 @@ export const HamburgerIcon = () => {
 
   )
 }
+
+export const RightIcon = () => {
+  return (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="24" fill="white" fill-opacity="0.4"/>
+<path d="M21 31L27 24L21 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  )
+}
+
+export const LeftIcon = () => {
+  return (
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="48" height="48" rx="24" fill="white" fill-opacity="0.4"/>
+    <path d="M27 17L21 24L27 31" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+  )
+}

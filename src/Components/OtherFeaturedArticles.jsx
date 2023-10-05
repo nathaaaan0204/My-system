@@ -16,19 +16,24 @@ export const OtherFeaturedArticles = () => {
         </Typography>
 
         {HotPicks.map((item) => (
-          <div className="">
-            <Card className="xl:bg-transparent mb-2 xl:mb-0 border-none shadow-none rounded cursor-pointer hover:bg-light-green-200">
+        
+            <Card
+              key={item.id}
+              className="xl:bg-transparent mb-2 xl:mb-0 border-none shadow-none rounded cursor-pointer hover:bg-light-green-200"
+            >
               <CardBody>
                 <Typography className="text-green font-bold uppercase text-[12px] xl:text-base">
                   {item.category}
                 </Typography>
-                <Typography className="text-lg xl:text-xl font-medium text-black">{item.title}</Typography>
+                <Typography className="text-lg xl:text-xl font-medium text-black">
+                  {item.title}
+                </Typography>
                 <Typography className="text-dark-gray font-medium text-[12px] xl:text-base">
                   Written by {item.author}
                 </Typography>
               </CardBody>
             </Card>
-          </div>
+       
         ))}
       </div>
     </Fragment>

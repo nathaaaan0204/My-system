@@ -10,6 +10,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<LoginPage />} />
         <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
         <Route path="/RegisterPage" element={<RegisterPage />} />
       </Routes>
     </Fragment>

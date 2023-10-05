@@ -8,6 +8,7 @@ import { BeatLoader } from 'react-spinners'
 import { Footer } from '../Components/Footer'
 import { FeaturedArticles } from '../Components/FeaturedArticles'
 import { RecentArticles } from '../Components/RecentArticles'
+import { ImageSwiper } from '../Components/ImageSwiper'
 
 export const HomePage = () => {
   const [loading, setLoading] = useState(false);
@@ -33,6 +34,9 @@ export const HomePage = () => {
         <FeaturedArticles/>
         <RecentArticles/>
         <FastMarquee/>
+        
+        <ImageSwiper/>
+        
         <Footer/>
    </div>   
     

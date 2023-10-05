@@ -17,7 +17,7 @@ export const FeaturedArticles = () => {
         <div className="flex flex-col xl:flex-row gap-6 xl:gap-12">
           <Card className="xl:w-[600px] rounded">
             <CardHeader className="m-0 rounded" >
-              <img className="m-0 xl:h-[414px]" src="/images/hero-bg.jpg" />
+              <img className="m-0 object-cover xl:max-h-[414px] w-full" src="/images/Gallery/nvsu-image7.jpeg" />
             </CardHeader>
             <CardBody className="flex flex-col gap-5">
               <Typography className="text-green font-bold uppercase text-[12px] xl:text-base">Computer Science</Typography>

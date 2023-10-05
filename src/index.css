@@ -8,3 +8,14 @@ body{
     background-color: #f5f5f5;
  
 }
+.slider-controller{
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-controller .swiper-button-next{
+    left: 58% !important;
+    transform: translateX(-58%) !important;
+}
