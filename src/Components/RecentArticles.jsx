@@ -5,22 +5,22 @@ import { RecentArticlesData } from '../utils/Data'
 export const RecentArticles = () => {
   return (
     <Fragment>
-    <div className="flex flex-col mx-96 my-12 gap-10">
-      <Typography variant="h2" className="">Featured Article</Typography>
+    <div className="flex flex-col 2xl:mx-96 mx-4 md:mx-16 lg:mx-32 my-12 gap-10">
+      <Typography className="text-2xl xl:text-4xl font-semibold">Recent Articles</Typography>
       
      
       <div className="flex flex-col gap-5">
         {RecentArticlesData.map((item) => (
-          <Card className="flex flex-row bg-transparent border-none shadow-none rounded cursor-pointer hover:bg-light-green-200 w-full">
+          <Card className="flex flex-col xl:flex-row  w-full lg:bg-transparent border-none lg:shadow-none rounded cursor-pointer hover:bg-light-green-200">
             <CardHeader className="m-0 rounded">
-              <img className="m-0 w-[350px] h-[200px]" src={item.imagesrc} />
+              <img className="m-0 xl:w-[350px] xl:h-[200px]" src={item.imagesrc} />
             </CardHeader>
-            <CardBody className="flex flex-col gap-5 justify-center">
-            <Typography className="text-green font-bold uppercase">
+            <CardBody className="flex flex-col gap-5 justify-center xl:w-[500px] 2xl:max-w-[700px]">
+            <Typography className="text-green font-bold uppercase text-[12px] lg:text-base">
                 {item.category}
               </Typography>
-              <Typography className="text-xl">{item.title}</Typography>
-              <Typography className="text-dark-gray font-medium">
+              <Typography className="text-lg lg:text-xl">{item.title}</Typography>
+              <Typography className="text-dark-gray font-medium text-[12px] lg:text-base">
                 Written by {item.author}
               </Typography>
             </CardBody>

@@ -11,24 +11,22 @@ import {
 export const CardSmall = () => {
   return (
     <Fragment>
-      <div className="flex justify-between">
+      <div className="flex flex-col xl:flex-row justify-between gap-5">
         {FeaturedPicks.map((item) => (
-          <Card className="bg-transparent border-none shadow-none rounded cursor-pointer hover:bg-light-green-200 w-[325px]">
+          <Card className="xl:bg-transparent border-none xl:shadow-none rounded cursor-pointer hover:bg-light-green-200 xl:w-[325px]">
             <CardHeader className="m-0 rounded">
-              <img className="m-0 h-[200px]" src={item.imagesrc} />
+              <img className="m-0 xl:h-[200px]" src={item.imagesrc} />
             </CardHeader>
-            <CardBody className="">
-            <Typography className="text-green font-bold uppercase">
+            <CardBody className="flex flex-col gap-5">
+            <Typography className="text-green font-bold uppercase text-[12px] xl:text-base">
                 {item.category}
               </Typography>
-              <Typography className="text-xl">{item.title}</Typography>
-              
-            </CardBody>
-            <CardFooter>
-            <Typography className="text-dark-gray font-medium">
+              <Typography className="text-lg xl:text-xl">{item.title}</Typography>
+              <Typography className="text-dark-gray font-medium text-[12px] xl:text-base">
                 Written by {item.author}
               </Typography>
-            </CardFooter>
+            </CardBody>
+           
           </Card>
         ))}
       </div>

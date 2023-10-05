@@ -8,6 +8,7 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
+import { HamburgerIcon } from "./CustomSvg";
 
 export const NavigationBar = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -49,28 +50,28 @@ export const NavigationBar = () => {
   );
 
   return (
-    <Navbar className="fixed z-50 backdrop-saturate-0 backdrop-blur-none bg-opacity-100 mx-auto border-none  rounded-none max-w-full py-2 px-4 lg:px-8 lg:py-4">
-      <div className="container mx-auto flex items-center justify-between text-black">
-        <img src="/images/logo.png"/>
+    <Navbar className="fixed z-50 backdrop-saturate-0 backdrop-blur-none bg-opacity-100 mx-auto border-none rounded-none max-w-full py-2 px-4 lg:px-8 lg:py-4 xl:py-0">
+      <div className="xl:container px-4 py-4 mx-auto flex items-center justify-between text-black">
+        <img className="h-24 xl:h-12" src="/images/logo.png"/>
         <div className="hidden lg:block">{navList}</div>
         <div>
-            <Button className="bg-green text-white py-3 px-7">Post an Article</Button>
-        <Button variant="text" className="text-black" onClick={handleLogout}>
+        <Button className="bg-green text-white py-3 px-7">Post an Article</Button>
+        <Button variant="text" className="text-black hidden lg:inline-block" onClick={handleLogout}>
           Log out
         </Button>
         </div>
       
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
-          {/* ... your existing hamburger icon code ... */}
+          {<HamburgerIcon/>}
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <div className="container mx-auto">
+        <div className="text-end">
           {navList}
           <Button className="bg-white" onClick={handleLogout}>
             <span>Log out</span>
