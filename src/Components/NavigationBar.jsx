@@ -55,7 +55,7 @@ export const NavigationBar = () => {
         <img className="h-8 xl:h-12" src="/images/logo.png"/>
         <div className="hidden lg:block">{navList}</div>
         <div>
-        <Button className="bg-green text-white py-3 px-7">Post an Article</Button>
+        <Button className="hidden lg:inline-block bg-green text-white py-3 px-7">Post an Article</Button>
         <Button variant="text" className="text-black hidden lg:inline-block" onClick={handleLogout}>
           Log out
         </Button>

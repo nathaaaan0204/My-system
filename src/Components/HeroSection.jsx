@@ -1,4 +1,4 @@
-import { Typography } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
 import React, { Fragment } from "react";
 
 export const HeroSection = () => {
@@ -12,6 +12,7 @@ export const HeroSection = () => {
           Unlock a world of knowledge and insights at Schoolname. Dive into our curated collection of academic articles and
           research papers, empowering your quest for learning and discovery.
         </Typography>
+        <Button className="bg-green text-white py-3 px-7 lg:hidden">Post an Article</Button>
       </div>
       
     </Fragment>
