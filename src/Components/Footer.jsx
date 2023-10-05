@@ -22,8 +22,8 @@ export const Footer = () => {
     <footer className="w-full pt-10 mt-10 shadow-lg border-t-2 border-green">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-        <img src="/images/logo.png" className="" />
-          <div className="grid grid-cols-3 justify-between gap-4">
+        <img src="/images/logo.png" className="h-auto" />
+          <div className="grid grid-cols-2 md:grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography

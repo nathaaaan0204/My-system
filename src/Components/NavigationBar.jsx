@@ -52,7 +52,7 @@ export const NavigationBar = () => {
   return (
     <Navbar className="fixed z-50 backdrop-saturate-0 backdrop-blur-none bg-opacity-100 mx-auto border-none rounded-none max-w-full py-2 px-4 lg:px-8 lg:py-4 xl:py-0">
       <div className="xl:container px-4 py-4 mx-auto flex items-center justify-between text-black">
-        <img className="h-24 xl:h-12" src="/images/logo.png"/>
+        <img className="h-8 xl:h-12" src="/images/logo.png"/>
         <div className="hidden lg:block">{navList}</div>
         <div>
         <Button className="bg-green text-white py-3 px-7">Post an Article</Button>
