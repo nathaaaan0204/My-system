@@ -110,17 +110,17 @@ export const RegisterPage = () => {
           />
 
           <Button type="submit" fullWidth className="bg-green">
-            Register
+            Sign Up
           </Button>
         </form>
         <Typography className="text-left">
                 By clicking the “Sign up” button, you are creating a Lead Gen
                 Crew account and therefore you agree to Lead Gen Crew Company’s
-                <strong>Terms of service</strong> and
-                <strong>Privacy Policy.</strong>
+                <strong className="ml-1">Terms of service</strong> and
+                <strong className="ml-1">Privacy Policy.</strong>
               </Typography>
               <Typography>
-                Don't have an account?
+                Already have an account?
                 <Link to="/LoginPage" className="text-green font-medium ml-1">
                   Sign in
                 </Link>

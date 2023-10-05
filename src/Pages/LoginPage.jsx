@@ -111,8 +111,8 @@ export const LoginPage = () => {
               <Typography className="text-left">
                 By clicking the “Sign in” button, you are entering the Website Name
                  and therefore you agree to Company’s
-                <strong>Terms of service</strong> and
-                <strong>Privacy Policy.</strong>
+                <strong className="ml-1">Terms of service</strong> and
+                <strong className="ml-1">Privacy Policy.</strong>
               </Typography>
               <Typography>
                 Don't have an account? 
